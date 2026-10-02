@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signet-jwt"
+version = "1.0.0"
+description = "Read the seal — an offline JSON Web Token inspector and exposure educator."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "at0m-b0mb" }]
+keywords = ["jwt", "jws", "jwe", "token", "security", "authentication", "oauth", "decode"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = ["PyQt6>=6.5"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/at0m-b0mb/Signet"
+Source = "https://github.com/at0m-b0mb/Signet"
+
+[project.scripts]
+signet = "signet.cli:main"
+
+[project.gui-scripts]
+signet-gui = "signet.app:main"
+
+[tool.setuptools]
+packages = ["signet", "signet.core", "signet.ui"]
