@@ -28,8 +28,8 @@ dependencies = ["PyQt6>=6.5"]
 dev = ["pytest>=7.0"]
 
 [project.urls]
-Homepage = "https://github.com/at0m-b0mb/Signet"
-Source = "https://github.com/at0m-b0mb/Signet"
+Homepage = "https://github.com/at0m-b0mb/Signet-JWT-Inspector"
+Source = "https://github.com/at0m-b0mb/Signet-JWT-Inspector"
 
 [project.scripts]
 signet = "signet.cli:main"
